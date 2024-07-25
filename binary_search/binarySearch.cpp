@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+/*basic binarySearch using recursion and iterative way*/
+
 int binarySearch(int low, int high, int target, vector<int> &nums)
 {
     if (low > high)
@@ -37,7 +39,7 @@ int main()
 {
     vector<int> a = {3, 4, 6, 7, 9, 12, 16, 17};
     int target = 6;
-    int ind = binarySearch(0,7,target,a);
+    int ind = binarySearch(0, 7, target, a);
     if (ind == -1)
         cout << "The target is not present." << endl;
     else
